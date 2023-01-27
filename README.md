@@ -112,7 +112,7 @@ You can find more info about the options [here](https://www.tenforums.com/tutori
     Enter the following into the terminal:
 
     ```
-    install g:\sources\install.esd 0 6 0
+    install g:\sources\install.esd 6 0 0
     ```
 
     This will now show you a summary of what is being done. Follow the steps on screen.
