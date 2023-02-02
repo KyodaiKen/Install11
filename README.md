@@ -24,9 +24,30 @@ You can find more info about the options [here](https://www.tenforums.com/tutori
 
     You can also use
     ```cmd
-    wmic diskdrive get Index, Size, Name, Manufacturer, Model, InterfaceType, MediaType, SerialNumber /format:list
+    wmic diskdrive get Index, Size, Model, SerialNumber /format:list
     ```
     to try to identify it further.
+
+    Example of how the list can look like:
+
+    ```
+    Index=0
+    Model=Viper M.2 VP4100
+    SerialNumber=AAAA_BBBB_CCCC_DDDD_221.
+    Size=2000396321280
+
+
+    Index=1
+    Model=Viper M.2 VP4100
+    SerialNumber=AAAA_BBBB_CCCC_DDDD_0301.
+    Size=2000396321280
+
+
+    Index=2
+    Model=INTEL SSDPEDMW400G4
+    SerialNumber=2334_DDDD_CCCC_BBBB_AAAA.
+    Size=400085844480
+    ```
 
     The number of "Index" is the number to use in diskpart.
 
