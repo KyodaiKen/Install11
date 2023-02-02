@@ -24,11 +24,11 @@ You can find more info about the options [here](https://www.tenforums.com/tutori
 
     You can also use
     ```cmd
-    wmic diskdrive get Name, Manufacturer, Model, InterfaceType, MediaType, SerialNumber /format:list
+    wmic diskdrive get Index, Size, Name, Manufacturer, Model, InterfaceType, MediaType, SerialNumber /format:list
     ```
     to try to identify it further.
 
-    The number at the end of `\\.\PHYSICALDRIVE` (ie. `\\.\PHYSICALDRIVE0`) **SHOULD** be the number to use in diskpart.
+    The number of "Index" is the number to use in diskpart.
 
     | :point_up:    | In a case where you have multiple drives with the same manufacturer, size, and more it is advised to only install the drive you want to install Windows on. |
     |---------------|:-------------------------|
